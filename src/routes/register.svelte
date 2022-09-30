@@ -5,7 +5,7 @@
     const { session } = stores();
 
     let username = '';
-    let email = '';
+    let name = '';
     let password = '';
     let error = null;
 
@@ -35,16 +35,23 @@
                     <a href="/login">Have an account?</a>
                 </p>
 
+                {#if error}
+                    {error}
+                {/if}
+
                 <form on:submit|preventDefault={submit}>
                     <fieldset class="form-group">
-                        <input class="form-control form-control-lg" type="text" required placeholder="Your Name" bind:value={username}>
+                        <input class="form-control form-control-lg" type="text" required placeholder="Your Username" bind:value={username}>
                     </fieldset>
+                    <br>
                     <fieldset class="form-group">
-                        <input class="form-control form-control-lg" type="email" required placeholder="Email" bind:value={email}>
+                        <input class="form-control form-control-lg" type="text" required placeholder="Name" bind:value={name}>
                     </fieldset>
+                    <br>
                     <fieldset class="form-group">
                         <input class="form-control form-control-lg" type="password" required placeholder="Password" bind:value={password}>
                     </fieldset>
+                    <br>
                     <button class="btn btn-lg btn-primary pull-xs-right">
                         Sign up
                     </button>

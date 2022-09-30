@@ -1,8 +1,13 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import successkid from 'images/fetchimage.jpg';
 </script>
 
 <style>
+	figure{
+		box-shadow: 3px 5px 5px 5px black;
+		padding-top: 10px;
+	}
+
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
