@@ -4,12 +4,13 @@ import compression from 'compression';
 import * as sapper from '@sapper/server';
 import session from "express-session";
 import sessionFileStore from "session-file-store";
+const {json} = require('body-parser');
 
 const FileStore = sessionFileStore(session);
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';
-const {json} = require('body-parser');
+
 
 polka() // You can also use Express
 	.use(
