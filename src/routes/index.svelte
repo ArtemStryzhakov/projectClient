@@ -4,7 +4,7 @@
 
 <style>
 	figure{
-		box-shadow: 3px 5px 5px 5px black;
+		box-shadow: 3px 5px 5px 5px #313131;
 		padding-top: 10px;
 	}
 
