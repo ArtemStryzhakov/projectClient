@@ -42,14 +42,14 @@
                 Loading...
             {:then transactions}
                 <table class="table table-striped table-bordered">
-                    <thread>
+                    <thead style="background:#20c997">
                         <tr>
                             <th>senderName</th>
                             <th>amount</th>
                             <th>createdAt</th>
                             <th>status</th>
                         </tr>
-                    </thread>
+                    </thead>
                     <tbody>
                     {#each transactions as transaction}
                         <tr>
@@ -66,4 +66,3 @@
         </section>
     {/await}
 {/if}
-overviewpage
